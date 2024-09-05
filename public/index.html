@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Background App</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Upload PNG Image</h1>
+        <div>
+            <label class="file-label" for="imageUpload">Choose PNG Image</label>
+            <input type="file" id="imageUpload" accept="image/png">
+        </div>
+
+        <h2>Choose Background</h2>
+        <div id="backgrounds">
+            <img src="./images/blue.jpg" class="background" alt="Background 1">
+            <img src="./images/Red.jpg" class="background" alt="Background 2">
+            <img src="./images/yellow.jpg" class="background" alt="Background 3">
+            <label class="file-label" for="customBackground">Choose Custom Background</label>
+            <input type="file" id="customBackground" accept="image/*">
+        </div>
+
+
+
+        <canvas id="canvas"></canvas>
+        <div id="button">
+            <button id="downloadBtn">Download Image</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
